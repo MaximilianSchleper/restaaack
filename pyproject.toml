@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-start = "python app.py"
+start = "source venv/bin/activate && python app.py"
 
 [build-system]
 requires = ["hatchling"]
