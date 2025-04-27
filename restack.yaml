@@ -1,4 +1,4 @@
 agents:
-  - path: csm_agent/__init__.py:EchoAgent
-    name: echo-agent
+  - path: csm_agent/agent.py:AgentChat
+    name: agent-chat
     description: "A simple echo agent for testing basic data flow" 

@@ -1,3 +1,5 @@
+# This file is intentionally left empty. The agent is now defined in agent.py.
+
 from pydantic import BaseModel
 from restack_ai.agent import agent, log
 from typing import List, Dict
