@@ -2,7 +2,7 @@
 name = "csm-agent"
 version = "0.1.0"
 description = "Customer Service Management Agent for Restack"
-authors = [ { name = "Your Name", email = "your@email.com" } ]
+authors = [ { name = "max schleper", email = "m@mslep.com" } ]
 requires-python = ">=3.10,<3.14"
 dependencies = [
     "fastapi",
@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-start = "uvicorn csm-agent:app --host 0.0.0.0 --port $PORT"
+start = "python app.py"
 
 [build-system]
 requires = ["hatchling"]
