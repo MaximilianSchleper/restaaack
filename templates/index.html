@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Salon Receptionist Agent</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        .message { margin-bottom: 1em; }
+        .customer { color: #d6336c; }
+        .agent { color: #228be6; }
+        form { margin-top: 2em; }
+    </style>
+</head>
+<body>
+    <h1>Beauty Salon Receptionist Agent</h1>
+    <div id="messages">
+        {% for msg in messages %}
+            <div class="message {{ msg.from }}">
+                <strong>{{ msg.from|capitalize }}:</strong> {{ msg.text }}
+            </div>
+        {% endfor %}
+    </div>
+    <form action="/message" method="post">
+        <input type="text" name="customer_message" placeholder="Type your message..." required style="width: 300px;">
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html> 

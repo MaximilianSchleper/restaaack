@@ -1,0 +1,6 @@
+.env
+.venv
+venv
+.cursor*
+pycache*
+__pycache__

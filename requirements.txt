@@ -1,0 +1,6 @@
+restack
+fastapi
+uvicorn
+openai
+sqlalchemy
+jinja2 
