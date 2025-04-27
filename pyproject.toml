@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-start = "source venv/bin/activate && python csm_agent/__init__.py"
+start = "csm_agent:main"
 
 [build-system]
 requires = ["hatchling"]

@@ -22,6 +22,9 @@ def receive_message(request: Request, customer_message: str = Form(...)):
     messages.append({"from": "agent", "text": response})
     return RedirectResponse("/", status_code=303)
 
-if __name__ == "__main__":
+def main():
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+if __name__ == "__main__":
+    main()
 
