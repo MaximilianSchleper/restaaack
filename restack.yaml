@@ -1,0 +1,4 @@
+agents:
+  - path: csm_agent/__init__.py:EchoAgent
+    name: echo-agent
+    description: "A simple echo agent for testing basic data flow" 
